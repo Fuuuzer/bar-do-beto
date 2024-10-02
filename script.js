@@ -28,6 +28,10 @@ function addItem(e) {
   }
 }
 
+function editItem() {
+  
+}
+
 submitBtn.addEventListener("click", addItem);
 
 items.addEventListener("click", function deleteItem(event) {
