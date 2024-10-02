@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,18 +14,19 @@ body {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  background: linear-gradient(180deg, #e9db5a 0%, #ebbf25 100%);
+  background: #ececec;
 }
 
 h1 {
-  color: #474747;
+  text-align: center;
+  color: #3a3a3a;
   margin: 60px auto;
   font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 .container {
   margin-bottom: 60px;
-  /* border: 1px solid red; */
   padding: 15px 20px;
   background: #ebaf14;
   min-height: 300px;
@@ -64,6 +65,7 @@ h1 {
 .form__input {
   padding: 10px 10px;
   font-size: 1rem;
+  background: #ffffff;
   border: 2px solid transparent;
 }
 
@@ -81,15 +83,15 @@ input::placeholder {
   padding: 10px 15px;
   font-weight: bold;
   font-size: 1.125rem;
-  background: #a35b07;
+  background: #d47b15;
   border: none;
   cursor: pointer;
   color: #fff;
 }
 
 .submit-btn:hover {
-  background: #e6e878;
-  color: #000;
+  background: #b65d15;
+  color: #fff;
 }
 
 .item:first-child {

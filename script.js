@@ -39,6 +39,8 @@ function addItem(e) {
   }
 }
 
+//mds q código porco :(
+
 
   // Adiciona o event listener ao botao de submit e aciona a funcao addItem
 submitBtn.addEventListener("click", addItem);
