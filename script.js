@@ -8,10 +8,21 @@ const items = document.querySelector(".items");
 
 function addItem(e) {
   e.preventDefault();
-
   if (!input.value == "") {
     const item = document.createElement("div");
     const text = input.value;
+
+    // Adiciona um event listener ao edit logo apos criar o item
+    items.addEventListener('click', editItem);
+    function editItem(e) {
+    if(e.target && e.target.classList.contains('edit-btn')){
+      console.log('editar')
+    } else {
+      console.log('nao editar')
+    }
+  }
+
+  // Cria um novo item na lista
     item.innerHTML = ` <p>${text}</p>
     <div class="item__icons">
       <i class="edit-btn fa-regular fa-pen-to-square"></i>
@@ -28,12 +39,9 @@ function addItem(e) {
   }
 }
 
-function editItem() {
-  
-}
 
+  // Adiciona o event listener ao botao de submit e aciona a funcao addItem
 submitBtn.addEventListener("click", addItem);
-
 items.addEventListener("click", function deleteItem(event) {
   if (event.target && event.target.classList.contains("delete-btn")) {
     const listItem = event.target.parentElement.parentElement;

@@ -131,3 +131,11 @@ i {
 .fa-trash:hover {
   color: rgb(95, 4, 4);
 }
+
+.edit-btn {
+  color: #474747;
+}
+
+.edit-btn:hover {
+  color: #fff;
+}
